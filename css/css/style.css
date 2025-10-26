@@ -1,0 +1,102 @@
+:root {
+    --cor-principal: #ff914d;
+    --cor-secundaria: #ffd6a5;
+    --cor-fundo: #fffaf3;
+    --cor-texto: #333;
+    --cor-botao: #ff914d;
+    --cor-botao-hover: #ffb26b;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 0.5rem 0 0;
+    padding: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.ativo {
+    text-decoration: underline;
+}
+
+/* Conteúdo principal */
+main {
+    text-align: center;
+    padding: 2rem;
+}
+
+main h2 {
+    color: var(--cor-principal);
+}
+
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px #ddd;
+}
+
+/* Botões e links */
+button, a.botao {
+    display: inline-block;
+    background-color: var(--cor-botao);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+button:hover, a.botao:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
